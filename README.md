@@ -61,10 +61,3 @@ aiu/
     ├── Pest1.png
     ├── Pest2.png
     └── readme.txt
----
-## KEY LEARNINGS
-* Responsive web design using Bootstrap
-* Multi-page website structure
-* UI/UX design for real-world applications
-* Form design and user interaction
-* Clean project organization
