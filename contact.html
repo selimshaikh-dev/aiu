@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Agricultural Information Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-seedling text-success me-2"></i>AGRI-HUB
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto text-uppercase small">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="guides.html">Farming Guides</a></li>
+                    <li class="nav-item"><a class="nav-link" href="crops.html">Crop Details</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pest-control.html">Pest Control</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-success text-white ms-lg-3 px-4 active" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5 bg-dark text-white text-center" style="background: linear-gradient(rgba(0,100,0,0.8), rgba(0,100,0,0.8)), url('https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&w=1600&q=80'); background-size: cover;">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Get Expert Advice</h1>
+            <p class="lead">Connect with Agricultural Extension Services and specialist consultants.</p>
+        </div>
+    </section>
+
+    <main class="flex-grow-1 py-5">
+        <div class="container">
+            <div class="row g-5">
+                
+                <div class="col-lg-7">
+                    <div class="card border-0 shadow-sm p-4 h-100" id="formWrapper">
+                        <div id="successMessage" class="text-center py-5 d-none animate__animated animate__fadeIn">
+                            <i class="fas fa-check-circle text-success fa-5x mb-4"></i>
+                            <h2 class="fw-bold">Thank You!</h2>
+                            <p class="text-muted px-lg-5">Your message has been received. Our agricultural experts will review your inquiry and get back to you shortly.</p>
+                            <button class="btn btn-success mt-3 px-4" onclick="location.reload()">Send Another Message</button>
+                        </div>
+
+                        <div id="formContent">
+                            <h3 class="fw-bold mb-4 text-success">Send an Inquiry</h3>
+                            <form id="agriContactForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label small fw-bold">Full Name <span class="text-danger">*</span></label>
+                                        <input type="text" id="senderName" class="form-control bg-light" placeholder="e.g. Selim Shaikh" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label small fw-bold">Email Address <span class="text-danger">*</span></label>
+                                        <input type="email" class="form-control bg-light" placeholder="selim@example.com" required>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label class="form-label small fw-bold">Area of Expertise Needed <span class="text-danger">*</span></label>
+                                        <select class="form-select bg-light" required>
+                                            <option value="" selected disabled>Choose expertise...</option>
+                                            <option>General Farming Advice</option>
+                                            <option>Pest & Disease Management</option>
+                                            <option>Soil Health & Fertility</option>
+                                            <option>Organic Certification</option>
+                                            <option>Hydroponics Support</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label class="form-label small fw-bold">Your Message <span class="text-danger">*</span></label>
+                                        <textarea class="form-control bg-light" rows="5" placeholder="Describe your inquiry in detail..." required></textarea>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label class="form-label small fw-bold">Optional Attachment (Image/Document)</label>
+                                        <input type="file" class="form-control bg-light">
+                                        <div class="form-text mt-1 small">Share photos of crop issues (Max 5MB).</div>
+                                    </div>
+                                    <div class="col-md-12 mt-4">
+                                        <button type="submit" id="submitBtn" class="btn btn-success w-100 fw-bold py-2 shadow-sm">SUBMIT INQUIRY</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="h-100">
+                        <h3 class="fw-bold mb-4">Contact Information</h3>
+                        <div class="d-flex mb-4">
+                            <div class="bg-success text-white rounded p-3 me-3">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Headquarters</h6>
+                                <p class="text-muted small">Khamarbari, Farmgate, Dhaka-1215, Bangladesh</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="bg-success text-white rounded p-3 me-3">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Hotline</h6>
+                                <p class="text-muted small">16123 (AIS Service)</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="bg-success text-white rounded p-3 me-3">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Official Email</h6>
+                                <p class="text-muted small">support@agri-hub.gov.bd</p>
+                            </div>
+                        </div>
+                        <div class="rounded shadow-sm overflow-hidden" style="height: 250px;">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.902342557342!2d90.3891!3d23.7509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8a4f9e8a8e1%3A0x63351d42a66e5f3a!2sKhamarbari!5e0!3m2!1sen!2sbd!4v1645000000000!5m2!1sen!2sbd" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container text-center">
+            <p class="mb-2">© 2026 Agricultural Information Hub | Level-3 Web Design & Development</p>
+            <div class="social-links">
+                <a href="#" class="text-white me-3 text-decoration-none"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-white me-3 text-decoration-none"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white text-decoration-none"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farming Guides | Agricultural Information Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-seedling text-success me-2"></i>AGRI-HUB
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto text-uppercase small">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="guides.html">Farming Guides</a></li>
+                    <li class="nav-item"><a class="nav-link" href="crops.html">Crop Details</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pest-control.html">Pest Control</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-success text-white ms-lg-3 px-4" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5 bg-success text-white text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Comprehensive Farming Guides</h1>
+            <p class="lead">Master modern methodologies and best practices for high-yield farming.</p>
+        </div>
+    </section>
+
+    <main class="flex-grow-1">
+        <div class="container py-5">
+            <div class="row">
+                
+                <div class="col-lg-3 mb-4">
+                    <div class="list-group shadow-sm sticky-top" style="top: 90px; z-index: 10;">
+                        <a href="#cropTypes" class="list-group-item list-group-item-action active">Crop Type Guides</a>
+                        <a href="#seasonalGuides" class="list-group-item list-group-item-action">Seasonal Practices</a>
+                        <a href="#farmingMethods" class="list-group-item list-group-item-action">Farming Methods</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-9">
+                    
+                    <div id="cropTypes" class="mb-5">
+                        <h2 class="border-bottom pb-2 mb-4"><i class="fas fa-carrot me-2 text-success"></i>Categorization by Crop Types</h2>
+                        <div class="accordion shadow-sm" id="accordionCrop">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#crop1">
+                                        Vegetable Farming Step-by-Step
+                                    </button>
+                                </h2>
+                                <div id="crop1" class="accordion-collapse collapse show" data-bs-parent="#accordionCrop">
+                                    <div class="accordion-body">
+                                        <ol>
+                                            <li><strong>Soil Preparation:</strong> Test pH levels and enrich with organic compost.</li>
+                                            <li><strong>Seed Selection:</strong> Use high-yield, disease-resistant varieties.</li>
+                                            <li><strong>Planting:</strong> Maintain proper spacing for airflow.</li>
+                                            <li><strong>Irrigation:</strong> Use drip systems to conserve water.</li>
+                                        </ol>
+                                        <div class="alert alert-info small"><i class="fas fa-lightbulb me-2"></i><strong>Tip:</strong> Crop rotation prevents soil nutrient depletion.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="seasonalGuides" class="mb-5">
+                        <h2 class="border-bottom pb-2 mb-4"><i class="fas fa-cloud-sun me-2 text-success"></i>Seasonal Practices</h2>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <img src="img/seasonal-farming.jpg" class="card-img-top" alt="Winter Farming">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Winter Care</h5>
+                                        <p class="card-text text-muted small">Techniques for frost protection and greenhouse management.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <img src="img/farming-method.jpg" class="card-img-top" alt="Summer Farming">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Summer Irrigation</h5>
+                                        <p class="card-text text-muted small">Optimizing water usage during high-heat months.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="farmingMethods" class="mb-5">
+                        <h2 class="border-bottom pb-2 mb-4"><i class="fas fa-tools text-success me-2"></i>Farming Methods & Methodologies</h2>
+                        <div class="row g-4">
+                            
+                            <div class="col-md-12 mb-3">
+                                <div class="card border-0 shadow-sm overflow-hidden">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="img/organic-method.jpg" class="img-fluid h-100" alt="Organic Farming" style="object-fit: cover; min-height: 200px;">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title fw-bold text-success">Organic Farming Methodology</h5>
+                                                <p class="card-text small">Avoid synthetic fertilizers and pesticides. Focus on biological pest control and specialized fertilizers derived from plant and animal wastes.</p>
+                                                <ul class="small text-muted">
+                                                    <li><strong>Best Practice:</strong> Use green manure to improve soil health.</li>
+                                                    <li><strong>Tip:</strong> Companion planting naturally deters specific pests.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="card border-0 shadow-sm overflow-hidden">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="img/hydroponic-method.jpg" class="img-fluid h-100" alt="Hydroponics" style="object-fit: cover; min-height: 200px;">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title fw-bold text-success">Hydroponics & Vertical Farming</h5>
+                                                <p class="card-text small">A method of growing plants without soil by using mineral nutrient solutions in a water solvent. Perfect for urban farming and limited spaces.</p>
+                                                <ul class="small text-muted">
+                                                    <li><strong>Best Practice:</strong> Monitor water pH levels daily.</li>
+                                                    <li><strong>Efficiency:</strong> Uses up to 90% less water than traditional farming.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div> 
+                </div> </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container text-center">
+            <p class="mb-2">&copy; 2026 Agricultural Information Hub | Level-3 Web Design & Development</p>
+            <div class="social-links">
+                <a href="#" class="text-white me-3 text-decoration-none"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-white me-3 text-decoration-none"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white text-decoration-none"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
